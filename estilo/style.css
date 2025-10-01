@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GenerateChange';
+    src: url('GenerateChangeDemootf.otf') format('opentype'), url('GenerateChangesDemottf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lostar';
+    src: url('Lostar.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root{
+    --fonte1: 'GenerateChange';
+    --fonte2: 'Lostar'
+    --fonte3: "Bebas Neue", sans-serif;
+}
+
+body{
+    background-color: #FFFFE4;
+    font-variant: small-caps;
+    font-family: var(--fonte3);
+}
+
+h1{
+    font-family:var(--fonte1);
+    font-size: 3em;
+    color: #1333ff;
+    padding: 10px;
+    
+}
+
+h1 > a{
+    font-family: var(--fonte3);
+}
