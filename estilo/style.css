@@ -15,24 +15,102 @@
 
 :root{
     --fonte1: 'GenerateChange';
-    --fonte2: 'Lostar'
+    --fonte2: 'Lostar';
     --fonte3: "Bebas Neue", sans-serif;
+
+    --cor1:#1333ff;
+    --cor2: #FFFFE4;
 }
 
-body{
-    background-color: #FFFFE4;
-    font-variant: small-caps;
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor2);
     font-family: var(--fonte3);
 }
 
-h1{
+header{
+    
+    margin: 10px;
+    padding-top: 12px;
+}
+
+header > a#home{
+    font-size: 4vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+a#home{
+    font-variant: small-caps;
     font-family:var(--fonte1);
     font-size: 3em;
-    color: #1333ff;
+    color: var(--cor1);
     padding: 10px;
+    margin: 20px 10px;
+}
+
+nav{
+    margin:  16px 10px;
+    padding: 10px 0px;
     
 }
 
-h1 > a{
+nav > a{
     font-family: var(--fonte3);
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: var(--cor1);
+    background-color: #F2F0EF;
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin: 10px;
 }
+
+nav a:hover{
+    background-color: rgb(230, 230, 230);
+    transition-delay: 0.1s;
+}
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+    color: var(--cor1);
+}
+
+p{
+    max-width: 600px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+
+footer{
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
