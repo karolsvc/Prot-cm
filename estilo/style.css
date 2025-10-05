@@ -35,78 +35,59 @@ html, body{
 }
 
 header{
-    
+    color: var(--cor1);
+    font-family: var(--fonte1);
+}
+
+header > h1{
+    padding: 30px;
+    font-size: 2em;
+}
+
+nav > a {
     margin: 10px;
-    padding-top: 12px;
-}
-
-header > a#home{
-    font-size: 4vw;
-}
-
-a{
+    padding: 10px;
     text-decoration: none;
-}
-
-a#home{
-    font-variant: small-caps;
-    font-family:var(--fonte1);
-    font-size: 3em;
-    color: var(--cor1);
-    padding: 10px;
-    margin: 20px 10px;
-}
-
-nav{
-    margin:  16px 10px;
-    padding: 10px 0px;
-    
-}
-
-nav > a{
-    font-family: var(--fonte3);
-    font-size: 1.5vw;
-    font-weight: normal;
-    color: var(--cor1);
-    background-color: #F2F0EF;
+    background-color: rgba(211, 211, 211, 0.349);
     border-radius: 999px;
-    padding: 6px 16px;
-    margin: 10px;
-}
-
-nav a:hover{
-    background-color: rgb(230, 230, 230);
-    transition-delay: 0.1s;
-}
-
-h1 {
-    margin: 10px;
-    padding: 10px;
-    font-family: var(--fonte3);
-    font-size: 1.5em;
     color: var(--cor1);
-}
-
-p{
-    max-width: 600px;
-    margin: 10px;
-    padding: 10px;
-    font-size: 18px;
-    text-align: justify;
     font-weight: bold;
-    font-size: 1.8vw;
 }
 
-footer{
+nav > a:hover{
+    background-color: lightgray;
+    transition: 0.3s;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+section > h2{
+    font-weight: bolder;
+    font-size: 1.6em;
+    font-variant: small-caps;
+}
+
+section > p{
+    display: inline-block;
+    padding: 5px;
+}
+
+footer {
     background-color: var(--cor1);
-    color: white;
+    color: var(--cor2);
     padding: 10px;
     text-align: center;
 }
 
-footer a{
-    
+footer > a{
     text-decoration: none;
+    font-weight: bolder;
     color: var(--cor2);
 }
 
