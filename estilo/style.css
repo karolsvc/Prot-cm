@@ -85,7 +85,7 @@ footer {
     text-align: center;
 }
 
-footer > a{
+footer > p > a{
     text-decoration: none;
     font-weight: bolder;
     color: var(--cor2);
